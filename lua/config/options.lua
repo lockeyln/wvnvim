@@ -5,8 +5,8 @@
 local M = {}
 
 M.g = {
-    mapleader = " ",
-    maplocalleader = ",",
+    -- mapleader = " ",
+    -- maplocalleader = ",",
     autoformat = false,
     neovide_cursor_vfx_mode = "pixiedust",
     -- neovide_cursor_vfx_mode = "torpedo",
