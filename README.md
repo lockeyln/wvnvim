@@ -13,4 +13,4 @@ Effects are as follows,
 
 ![](https://i.imgur.com/ebT9DaG.png)
 
-More notes about this config repo
+win10 系统需要安装 gcc
