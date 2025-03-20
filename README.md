@@ -13,4 +13,4 @@ Effects are as follows,
 
 ![](https://i.imgur.com/ebT9DaG.png)
 
-win10 系统需要安装 gcc
+`scoop install neovim neovide git lazygit gcc ripgrep fd unzip tree-sitter luarocks `
