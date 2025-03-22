@@ -304,8 +304,8 @@ map({"i"}, "<Esc-k>", "<Esc-Esc-k>")
 -- TODO: 目前无法规避这个问题：1、在 Windows Terminal 中同时按下 Esc + j/k 会等效于 Alt + j/k，这样就会触发 Alt + j/k 绑定的 swap lines 的功能；2、而在 Neovide 中，在 Windows 下，其无法响应 Ctrl + Alt + j/k 的快捷键，那么，只能采取以下折中的方法暂时规避。按：在 Arch + KDE(wayland) 中这些都是正常的
 if not vim.g.neovide then
     -- unmap for moving lines
-    unmap({"n", "i"}, "<A-j>")
-    unmap({"n", "i"}, "<A-k>")
+    -- unmap({"n", "i"}, "<A-j>")
+    -- unmap({"n", "i"}, "<A-k>")
 
     -- remap for moving lines
     map("n", "<C-A-j>", "<cmd>m .+1<cr>==", {desc = "Move Down"})

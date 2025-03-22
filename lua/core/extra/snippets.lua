@@ -40,7 +40,7 @@ ls.add_snippets(
             }
         ),
         s(
-            "fanymain",
+            "nrmain",
             {
                 -- Simple static text.
                 t({"", "", "int main() {"}),

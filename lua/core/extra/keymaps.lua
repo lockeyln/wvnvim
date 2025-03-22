@@ -28,17 +28,17 @@ if not vim.g.vscode then
 
     -- copy relative path
     vim.cmd([[
-command! -nargs=0 CpRelativePath lua require("fany.utils.fanyutils").copy_relative_path()
+command! -nargs=0 CpRelativePath lua require("core.utils.aid").copy_relative_path()
 ]])
 
     -- copy relative path
     vim.cmd([[
-command! -nargs=0 CpFileName lua require("fany.utils.fanyutils").copy_current_filename()
+command! -nargs=0 CpFileName lua require("core.utils.aid").copy_current_filename()
 ]])
 
     -- copy absolute path
     vim.cmd([[
-command! -nargs=0 CpAbsolutePath lua require("fany.utils.fanyutils").copy_absolute_path()
+command! -nargs=0 CpAbsolutePath lua require("core.utils.aid").copy_absolute_path()
 ]])
 
     -- register F11 to toggle fullscreen in normal mode
@@ -53,7 +53,7 @@ else
         {desc = "Quit VSCode"}
     )
     map(
-       "n",
+        "n",
         "<leader>c",
         "<Cmd>lua require('vscode').call('workbench.action.closeEditorInAllGroups')<CR>",
         {desc = "Close Current Tab"}
