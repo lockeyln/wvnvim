@@ -312,8 +312,10 @@ if not vim.g.neovide then
     map("n", "<C-A-k>", "<cmd>m .-2<cr>==", {desc = "Move Up"})
     map("i", "<C-A-j>", "<esc><cmd>m .+1<cr>==gi", {desc = "Move Down"})
     map("i", "<C-A-k>", "<esc><cmd>m .-2<cr>==gi", {desc = "Move Up"})
-    map("i", "<C-A-h>", "<Left>", {desc = "Move Left"})
-    map("i", "<C-A-l>", "<Right>", {desc = "Move Left"})
+    map("i", "<A-h>", "<Left>", {desc = "Move Left"})
+    map("i", "<A-l>", "<Right>", {desc = "Move Right"})
+    map("i", "<A-j>", "<Down>", {desc = "Move Down"})
+    map("i", "<A-k>", "<Up>", {desc = "Move Up"})
     map("v", "<C-A-j>", ":m '>+1<cr>gv=gv", {desc = "Move Down"})
     map("v", "<C-A-k>", ":m '<-2<cr>gv=gv", {desc = "Move Up"})
 end

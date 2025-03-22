@@ -53,7 +53,7 @@ else
         {desc = "Quit VSCode"}
     )
     map(
-        "n",
+       "n",
         "<leader>c",
         "<Cmd>lua require('vscode').call('workbench.action.closeEditorInAllGroups')<CR>",
         {desc = "Close Current Tab"}
